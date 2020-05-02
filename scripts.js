@@ -9,7 +9,12 @@ let name ='Adam';
 let age = 34;
 
 function myLittleFunction(){
-    $ ('main').append('<p>A p is appended is the main.</p>');
+    //contdition: number of ps is smaller than 5
+    if ($ ('p').length <5) {
+        $ ('main').append('<p>A p is appended is the main.</p>');
+    } else {
+        console.log ('We reached the maximum paragraph number');
+    }
     $('p').css('border', '1px solid red');
     $ ('p').css('padding', '10px');
 }
@@ -21,6 +26,17 @@ $ ('#add').click(myLittleFunction);
 $ ('#remove').click(function(){
     $('p:last-child').remove ();
 });
+
+
+// Fourth part:
+
+// if (condition that true or false) {
+    //condition is true
+//} else {
+      //condition is false
+//}
+
+
 
 // Single line comment
 /* Multiple
