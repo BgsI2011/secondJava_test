@@ -43,6 +43,10 @@ colors.forEach(function (color) {
     $ ('.box:last-child').css('background', color);
 });
 
+for (let i = 0; i < 100; i++) {
+    console.log(i);
+}
+
 
 // Single line comment
 /* Multiple
