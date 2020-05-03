@@ -36,6 +36,12 @@ $ ('#remove').click(function(){
       //condition is false
 //}
 
+let colors = ['orange', 'yellow', 'blue', 'lime', 'magenta'];
+
+colors.forEach(function (color) {
+    $ ('#box-container').append('<div class="box"></div>');
+    $ ('.box:last-child').css('background', color);
+});
 
 
 // Single line comment
